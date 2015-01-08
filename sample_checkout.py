@@ -1,9 +1,8 @@
 class Checkout:
-	def __init__(self, input = 'default.txt'):
+	def __init__(self):
 		self.sum = 0.0
-		rates(input)
 		
-	def rates(filename):
+	def rates(self,filename = 'default.txt'):
 		junk = 0
 		with open(filename) as f:
 			while True:
@@ -23,7 +22,7 @@ class Checkout:
 				d = dict(zip(item,cost))
 				
 	def scan(self, ch):
-		ch = is.upper(ch)
+		ch = ch.isupper()
 		price = d[ch]
 		self.sum += price
 		
