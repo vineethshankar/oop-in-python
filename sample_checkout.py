@@ -2,7 +2,7 @@ class Checkout:
 	def __init__(self):
 		self.sum = 0.0
 		
-	def rates(self,filename = 'default.txt'):
+	def new(self,filename = 'default.txt'):
 		junk = 0
 		with open(filename) as f:
 			while True:
@@ -12,20 +12,19 @@ class Checkout:
 					break
 				if not line:
 					break
-					
-			d = {}
 			item = []
 			cost = []
 			for x in f.readlines():
 				item.append(x.split()[0])
 				cost.append(float(x.split()[1]))
-				d = dict(zip(item,cost))
+			self.d = dict(zip(item,cost))
 				
-	def scan(self, ch):
-		ch = ch.isupper()
-		price = d[ch]
-		self.sum += price
+	def scan(self, s):
+		self.sum +=  self.d[s]
+		print 'total = '
+		return self.sum
+		print '\n'
 		
 	def total(self):
-		print self.sum
+		return self.sum
 			

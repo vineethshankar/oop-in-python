@@ -1,19 +1,7 @@
-def rates(filename):
-		junk = 0
-		with open(filename) as f:
-			while True:
-				line = f.readline()
-				junk += 1
-				if '---' in line:
-					break
-				if not line:
-					break
-					
-			d = {}
-			item = []
-			cost = []
-			print junk
-			for x in f.readlines():
-				item.append(x.split()[0])
-				cost.append(float(x.split()[1]))
-				d = dict(zip(item,cost))
+from sample_checkout import Checkout
+co1 = Checkout()
+co1.new('default.txt')
+print co1.scan('A')
+print co1.scan('B')
+print co1.scan('C')
+print 'The bill is ', co1.total()
