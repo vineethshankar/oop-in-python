@@ -17,4 +17,4 @@ co1.scan('C')
 print 'The bill is ', co1.total()
 ```
 
-The code given in [checkout.py](https://github.com/vineethshankar/oop-in-python/blob/master/checkout.py) should work any order and number of items but in the same format as given in the 'special price' column of pricing_rules.txt
+The code given in [checkout.py](https://github.com/vineethshankar/oop-in-python/blob/master/checkout.py) should work for any order and number of items but in the same format as given in the 'special price' column of pricing_rules.txt
