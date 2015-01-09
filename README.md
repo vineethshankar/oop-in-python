@@ -1,7 +1,7 @@
 ## Supermarket checkout system: oop-in-python
 This is a python implementation of the 9th exercise in [CodeKata](http://codekata.com/kata/kata09-back-to-the-checkout/ "Kata 09").
 
-Here, a checkout system has been designed in which items can be 'scanned' and prices tallied in accordance to a user-set pricing rules. The default pricing rules are given in [default.txt](https://github.com/vineethshankar/oop-in-python/blob/master/default.txt). The user can set his pricing rules in [pricing_rules.txt](https://github.com/vineethshankar/oop-in-python/blob/master/pricing_rules.txt).
+Here, a checkout system has been designed in which items can be 'scanned' and prices tallied in accordance to a user-set pricing rules. The default pricing rules are given in [default.txt](https://github.com/vineethshankar/oop-in-python/blob/master/default.txt). The user can set the pricing rules in [pricing_rules.txt](https://github.com/vineethshankar/oop-in-python/blob/master/pricing_rules.txt).
 
 The interface to this checkout system is contained in [test.py](https://github.com/vineethshankar/oop-in-python/blob/master/test.py).
 
